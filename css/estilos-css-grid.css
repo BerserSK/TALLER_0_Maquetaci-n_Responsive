@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5{
     display: grid;
     grid-template: 
     "nav" auto
-    "banner" 400px
+    "banner" 300px
     "descripcion" auto
     "features" auto
     "ubicacion" auto
@@ -78,9 +78,11 @@ nav{
 }
 
 .menu{
-    grid-area: menu;
-    display: grid;
     background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
     display: none;
 }
 
@@ -121,6 +123,66 @@ nav a:hover{
     background-position: 50% 50%;
     min-height: 400px;
 }
+
+#descripcion{
+    display: flex;
+    padding: 3em 2em;
+}
+
+#descripcion p{
+    flex-direction: column;
+    justify-content: center;
+}
+
+#descripcion img{
+    display: none;
+}
+
+#features{
+    background: url(../img/index/bg-features.png);
+    color: white;
+    padding-top: 1rem;
+}
+
+.features-title{
+    background-color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+.features-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature{
+    width: 25%;
+    min-width: 180px;
+    max-width: 230px;
+    margin: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.feature i{
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+}
+
+.feature-blue{
+    background-color: #00325eae;
+}
+
+.feature-black{
+    background-color: rgba(0, 0, 0, 0.59);
+}
+
 /*Resoluciones macro*/
 @media screen and (min-width: 1308px){
     body{
