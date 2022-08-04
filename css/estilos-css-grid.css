@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5{
     display: grid;
     grid-template: 
     "nav" auto
-    "banner" 300px
+    "banner" 330px
     "descripcion" auto
     "features" auto
     "ubicacion" auto
@@ -126,12 +126,15 @@ nav a:hover{
 
 #descripcion{
     display: flex;
-    padding: 3em 2em;
+    padding: 3rem 2rem;
+    font-family: 'Marcellus', serif;
+    font-weight: bold;
 }
 
 #descripcion p{
     flex-direction: column;
     justify-content: center;
+    padding: 0 0 2rem 0;
 }
 
 #descripcion img{
@@ -183,6 +186,219 @@ nav a:hover{
     background-color: rgba(0, 0, 0, 0.59);
 }
 
+#ubicacion{
+    font-family: 'Marcellus', serif;
+}
+
+#ubicacion .title{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#ubicacion .maps img{
+    width: 100%;
+}
+
+#ubicacion .direccion{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+
+#ubicacion .colombia{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    padding-bottom: .1rem;
+}
+
+#ubicacion hr{
+    height: .5px;
+    width: 95%;
+    background-color: var(--azuloscuro);
+    margin-left: 10px;
+}
+
+#ubicacion .telefono{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    padding: 1rem 0 2rem;
+}
+
+.nosotros{
+    display: flex;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 2rem;
+    height: 140px;
+    justify-content: center;
+    padding-top: 1.5rem;
+    font-family: 'Marcellus',serif;   
+}
+
+#opinion{
+    color: var(--blanco);
+    font-family: 'Marcellus', serif;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+#opinion .cards{
+    background: var(--degradado);
+    display: flex;
+    padding: .5rem;
+    width: 75%;
+    border-radius: 5px;
+    position: relative;
+}
+
+#opinion .card-content{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 25px 50px 145px 0;
+    grid-template-areas: 
+    "foto nombre"
+    "foto stars"
+    "texto texto";
+}
+
+#opinion .rating{
+    justify-items: flex-end;
+}
+
+#opinion .cards img{
+    grid-area: foto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+#opinion .cards .name-profession{
+    grid-area: nombre;
+    display: flex;
+    align-self: center;
+    margin-top: 3rem;
+    font-size: 20px;
+}
+
+#opinion .cards .rating{
+    grid-area: stars;
+    display: flex;
+    align-self: center;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+#opinion .cards .rating .star1{
+    color: var(--magenta);
+}
+
+#opinion .cards .bottom{
+    grid-area: texto;
+    display: flex;
+    align-self: center;
+    padding: 2rem 1rem;
+    margin-top: 1.5rem;
+}
+
+footer{
+    background-color: var(--negro2);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    display: grid;
+    font-family: 'Marcellus', serif;
+}
+
+footer p{
+    color: var(--blanco);
+}
+
+footer i{
+    color: var(--blanco);
+}
+
+footer hr{
+    color: var(--blanco);
+    width: 100%;
+    right: 15px;
+    justify-content: center;
+}
+
+footer .descripcion-footer{
+    font-size: 1em;
+    padding: 0 0 1rem .7rem;
+}
+
+footer .locacion{
+    display: flex;
+}
+
+footer .locacion p{
+    font-size: .9rem;
+    padding-top: .5rem;
+}
+
+footer i{
+    padding: 0 0 .5rem .5rem;
+}
+
+footer p{
+    padding: 0 .5rem .7rem 1rem;
+}
+
+footer .fa-location-dot{
+    padding-top: 1rem;
+    font-size: 20px;
+}
+
+footer .telefono{
+    display: flex;
+}
+
+footer .telefono p{
+    font-size: .9rem;
+    padding-top: .3rem;
+    padding-bottom: .5rem;
+}
+
+footer .fa-phone{
+    padding-top: .3rem;
+    font-size: 18px;
+}
+
+footer .contactos{
+    padding: .5rem 0 .5rem 0;
+}
+
+footer .politicas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0 .5rem 0;
+    align-items: center;
+}
+
+footer .redes-sociales{
+    display: flex;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+footer .fa-facebook-f{
+    padding-left: 2rem;
+}
+
+footer .fa-twitter{
+    padding-left: 2rem;
+}
 /*Resoluciones macro*/
 @media screen and (min-width: 1308px){
     body{
