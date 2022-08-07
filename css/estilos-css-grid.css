@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5{
     display: grid;
     grid-template: 
     "nav" auto
-    "banner" 330px
+    "banner" auto
     "descripcion" auto
     "features" auto
     "ubicacion" auto
@@ -124,9 +124,59 @@ nav a:hover{
     min-height: 400px;
 }
 
+#banner .first-h3{
+    padding: 15px;
+    color: var(--blanco);
+    z-index: 2;
+    position: relative;
+    top: 310px;
+}
+
+#banner .back{
+    background-color: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    width: 95%;
+    height: 95px;
+    z-index: 1;
+    top: 305px;
+}
+
+#banner .line1{
+    background-color: var(--gris);
+    position: relative;
+    width: 5%;
+    height: 6px;
+    z-index: 1;
+    top: 303px;
+    border-radius: 20px;
+    left: 205px;
+}
+
+#banner .line2{
+    background-color: var(--gris);
+    position: relative;
+    width: 5%;
+    height: 6px;
+    z-index: 1;
+    top: 297px;
+    border-radius: 20px;
+    left: 237px;
+}
+
+#banner .line3{
+    background-color: var(--gris);
+    position: relative;
+    width: 5%;
+    height: 6px;
+    z-index: 1;
+    top: 291px;
+    border-radius: 20px;
+    left: 269px;
+}
+
 #descripcion{
     display: flex;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem .5rem 2rem;
     font-family: 'Marcellus', serif;
     font-weight: bold;
 }
@@ -135,11 +185,32 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     padding: 0 0 2rem 0;
+    font-family: 'Marcellus', serif;
 }
 
 #descripcion img{
     display: none;
 }
+
+.social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: var(--magenta);
+    box-shadow: 0 2px var(--negro);
+    border-radius: 5px;
+}
+
+.social-bar a{
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 2px 7px;
+    font-family: 'Marcellus', serif;
+}
+
 
 #features{
     background: url(../img/index/bg-features.png);
@@ -195,37 +266,42 @@ nav a:hover{
     display: flex;
     justify-content: center;
     padding: 1rem;
+    font-family: 'Marcellus', serif;
 }
 
-#ubicacion .maps img{
+#ubicacion .maps iframe{
     width: 100%;
+    height: 305px;
 }
 
 #ubicacion .direccion{
     display: flex;
     justify-content: center;
-    font-size: 22px;
+    font-size: 25px;
+    font-family: 'Marcellus', serif;
 }
 
 #ubicacion .colombia{
     display: flex;
     justify-content: center;
-    font-size: 22px;
+    font-size: 25px;
     padding-bottom: .1rem;
+    font-family: 'Marcellus', serif;
 }
 
 #ubicacion hr{
-    height: .5px;
+    height: 2.5px;
     width: 95%;
-    background-color: var(--azuloscuro);
+    background-color: var(--azulclaro);
     margin-left: 10px;
 }
 
 #ubicacion .telefono{
     display: flex;
     justify-content: center;
-    font-size: 22px;
+    font-size: 25px;
     padding: 1rem 0 2rem;
+    font-family: 'Marcellus', serif;
 }
 
 .nosotros{
@@ -246,9 +322,9 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 140px;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 118px;
 }
 
 #opinion .cards{
@@ -274,28 +350,52 @@ nav a:hover{
     justify-items: flex-end;
 }
 
-#opinion .cards img{
+#opinion .cards .fotop{
     grid-area: foto;
-    width: 70px;
-    height: 70px;
+    width: 105px;
+    height: 105px;
     border-radius: 50%;
     padding: 1rem;
+    position: absolute;
+}
+
+#opinion .cards .deg{
+    width: 100%;
+    height: 49%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    border-radius: 0px;
+}
+
+#opinion .carta3{
+    display: none;
+}
+
+#opinion .carta2{
+    display: none;
 }
 
 #opinion .cards .name-profession{
     grid-area: nombre;
     display: flex;
+    position: absolute;
     align-self: center;
-    margin-top: 3rem;
     font-size: 20px;
+    left: 125px;
+    top: 28px;
+    font-family: 'Marcellus', serif;
 }
 
 #opinion .cards .rating{
     grid-area: stars;
     display: flex;
+    position: absolute;
     align-self: center;
-    margin-top: 1rem;
     font-size: 20px;
+    top: 57px;
+    left: 125px;
 }
 
 #opinion .cards .rating .star1{
@@ -308,6 +408,40 @@ nav a:hover{
     align-self: center;
     padding: 2rem 1rem;
     margin-top: 1.5rem;
+}
+
+
+.line4{
+    background-color: rgb(133, 135, 135);
+    position: relative;
+    width: 7%;
+    height: 6px;
+    z-index: 1;
+    bottom: 50px;
+    border-radius: 20px;
+    left: 183px
+}
+
+.line5{
+    background-color: rgb(133, 135, 135);;
+    position: relative;
+    width: 7%;
+    height: 6px;
+    z-index: 1;
+    bottom: 56px;
+    border-radius: 20px;
+    left: 225px
+}
+
+.line6{
+    background-color: rgb(133, 135, 135);;
+    position: relative;
+    width: 7%;
+    height: 6px;
+    z-index: 1;
+    bottom: 62px;
+    border-radius: 20px;
+    left: 267px
 }
 
 footer{
@@ -413,6 +547,134 @@ footer .fa-twitter{
         width: 100%;
         max-width: 1300px;
     }
+
+    .body-form{
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    #banner .line1{
+        left: 605px;
+        width: 3%;
+    }
+
+    #banner .line2{
+        left: 655px;
+        width: 3%;
+        top: 297px;
+    }
+
+    #banner .line3{
+        left: 705px;
+        width: 3%;
+        top: 291px;
+    }
+
+    #banner .back{
+        height: 110px;
+        top: 290px;
+    }
+
+    #banner .first-h3{
+        top: 290px;
+        font-size: 2rem;
+    }
+
+    .social-bar{
+        font-size: 2rem;
+    }
+
+    #descripcion img{
+        display: block;
+        width: 125px;
+        position: relative;
+        right: 44px;
+        bottom: 12px;
+    }
+
+    #descripcion p{
+        padding: 0 5rem 2rem 0;
+    }
+
+    #ubicacion .maps iframe{
+        width: 100%;
+    }
+
+    #opinion{
+        display: flex;
+    }
+
+    #opinion .cards{
+        width: 30%;
+    }
+
+    #opinion .carta1{
+        right: 45px;
+    }
+
+    #opinion .carta2{
+        display: block;
+    }
+
+    #opinion .carta3{
+        display: block;
+        left: 45px;
+    }
+
+    #opinion .carta2 .rating .star1{
+        color: var(--blanco);
+    }
+
+    #opinion .carta3 .rating .star1,
+    #opinion .carta3 .rating .star2,
+    #opinion .carta3 .rating .star3{
+        color: var(--magenta);
+    }
+
+    .line4{
+        left: 550px;
+        width: 4%;
+    }
+
+    .line5{
+        left: 615px;
+        width: 4%;
+    }
+
+    .line6{
+        left: 680px;
+        width: 4%;
+    }
+
+    footer{
+        justify-content: space-between;
+    }
+
+    footer hr{
+        display: none;
+    }
+
+    footer .descripcion-footer{
+        padding: 0 59rem 1rem .7rem;
+        position: absolute;
+    }
+
+    footer .contactos{
+        padding: 0.5rem 0 0.5rem 0;
+        position: relative;
+        left: 500px;
+    }
+
+    footer .politicas{
+        display: block;
+        left: 1000px;
+        position: absolute;
+    }
+
+    footer .politica{
+        padding-bottom: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 1024px){
@@ -449,8 +711,9 @@ footer .fa-twitter{
     }
 
     .item{
-        margin: 0 1rem;
+        padding: 1rem;
     }
+
 }
 
 .body-form{
@@ -461,6 +724,7 @@ footer .fa-twitter{
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-size: cover;
 }
 
 *{
@@ -470,81 +734,115 @@ footer .fa-twitter{
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
+form{
+    font-family: 'Marcellus', serif;
+}
+
+.login-form{
+    width: 400px;
+    height: 490px;
+    min-width: 300px;
+    background-color: rgb(51, 122, 183, 0.83);
+
+}
+
+form .blanco{
+    width: 403px;
+    margin: 0;
+    padding: 0;
+    left: -1px;
     position: relative;
-    max-width: 430px;
-    width: 100%;
-    background-color: rgb(51, 122, 183, 0.68);
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 0 20px;
 }
 
-.container .forms{
+form .hotel{
+    left: 20px;
+    position: relative;
+    bottom: 125px;
+    width: 175px;
+}
+
+.container form i{
     display: flex;
-    align-items: center;
-    height: 440px;
-    width: 200%;
-    transition: height 0.2s ease;
-}
-
-
-.container .form{
-    width: 50%;
-    padding: 30px;
-    background-color: rgb(51, 122, 183, 0.68);
-}
-
-.container .form i{
-    display: flex;
-    font-size: 50px;
+    position: relative;
     justify-content: center;
-}
-
-
-.form .input-field{
-    position: relative;
-    height: 50px;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.input-field input{
-    position: absolute;
-    height: 80%;
-    width: 100%;
-    padding: 0 35px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    border-bottom: 2px solid #ccc;
-    border-top: 2px solid transparent;
-}
-
-.form p{
+    font-size: 3rem;
     color: var(--blanco);
-    padding: .5;
+    background: var(--magenta);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    bottom: 85px;
+    left: 155px;
+    align-items: center;
+    align-self: center;
 }
 
-.form .button{
-    margin-top: 35px;
+.login-form label{
+    color: var(--blanco);
+    font-size: 1.1em;
+    left: 41px;
+    position: relative;
+    bottom: 50px;
+    font-family: 'Marcellus', serif;
 }
 
-.form .button input{
+.login-form input{
+    display: block;
+    margin: auto;
+    height: 35px;
+    width: 80%;
+    padding-left: 40px;
+    border: 3px solid;
+}
+
+.login-form input[type="text"]{
+    margin-top: 5px;
     border: none;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    border-radius: 6px;
+    bottom: 52px;
+    position: relative;
+    margin-bottom: 13px;
+    font-family: 'Marcellus', serif;
+    border-radius: 5px;
+    color: var(--negro2);
+    font-size: 1.3em;
+    outline: none;
+}
+
+.login-form input[type="password"]{
+    margin-top: 5px;
+    border: none;
+    position: relative;
+    bottom: 50px;
+    font-family: 'Marcellus', serif;
+    border-radius: 5px;
+    color: var(--negro2);
+    font-size: 1.3em;
+    text-decoration: none;
+    border-style: none;
+    outline: none;
+}
+
+.login-form input[type="submit"]{
+    margin-top: 5px;
     background-color: var(--negro2);
+    color: var(--blanco);
+    padding: 0.2rem;
+    margin-top: 70px;
+    border: none;
+    position: relative;
+    bottom: 70px;
+    font-family: 'Marcellus', serif;
+    border-radius: 5px;
+    font-size: 1em;
     cursor: pointer;
-    margin-top: 2rem;
 }
 
-.button input:hover{
-    background-color: var(--blanco);
-    color: #000;
+.login-form button{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    height: 40px;
+    width: 78%;
+    background-color: #000;
 }
-
