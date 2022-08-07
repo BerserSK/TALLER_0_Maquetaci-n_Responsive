@@ -1,0 +1,158 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+:root{
+    
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://lh3.googleusercontent.com/fife/AAbDypAvU0DffGS3OhYUkxb6DLPjtpAQfdEyN3_fQpduJEmdX0KlOtdoOOkechc-TBer1YY7ig7J0j3Z555OvHaWd8S1DpVdOMOpodQMyBVlIOvqLzNrCLRb-ClqMG0HFtzqr4NmBelj2qWKrLPo7m1L8yzVr1pRLHyURqwvZM6wYdgcKo7X6E0YEBJqcyI1VSzwnx3PYDFXO3J4CNzcsbjQJprM2BxfqVcjd_H21dDHucYyjdYGrLw_em9x4QLGQfMrn-p94Z29fscxeGSdD3F2C4w34V2WXNyBugulb6YefrbJrV4ZMaLKHG1QH9L-StqST46DLMtxg3O9FeOZB_9XndPMLo8IVRFXQnD3aELQOj8UoMI0MbSX8S_N0Ew82gSy1AC94VJSRcblRUjV28IdxxR1N4R130Lm7kAx7_HUxt5tIwsThZkxAG7SP-4ORrPvbq1-qc7dRmtIyH5g9UNdXo-j7KCAjusAxvX364u_DUFYTsfri-4QQTApuT5QUanl27FePbP3ERNXOA1cCu3lCwxBYEB7YKSCl9p432okuiqRno2shcCRxG84fcdXRPLzfXSsTzWHX4ged6Ui5KH2lfkvegpYEMOUNtrVHlpWExC1WpDuw-PSX_it5CCtEizLhib7a2LfYEPtpZNIfmqzI2couw01Yd0lcByLwNtDWVAkXS-wwo95jz3aR6KFTraG6pAhND3S5BYULs2zV7uh751AwKw-FUUJEqUecwAnqfib84QyHvxFfpGuS0fUAwugXoPBvb8TcJdvKLtguUcpzid3t8PzidXk4TTVS7EFPsiWiWsL0wzVnaMKJr_FMV9N-Em9F22n8UhRrmqWJScDgC4jYo9QvCJGjgQpEIOW0ewo-9geRcRWOn6vZAUaFHEhp-K5_4WTtC1la7hFIboj8zZoIlfevbw0LcUNCR5gCLKo4cBYqQ0CfGNd6zINQOHCmjrPu6Nx4o2niBLPW19zgOLylbsdPCtRdv0XZe817s2wpaL_RbzrKhK8PLewzRLojhPtK8IE3KSQsH1FpR7un9R9JULl15KB52AolaACDYS5ucLIjNui9RD3-1D5rB5BFITNAQfXrmpOY-GtLecNHb7ihboIuxpei_PsgT7WCjRz65lpljQtKN_naqeoQMvwVrw2RsV75yadDIxqDDDsdwcMQaBAFyQntRCYWEmszu-SaEyhwedisHsZ0VNmQi7u-lqyVsbL-M3xsF33xBzep-EGGm_wWZsUcm68COzaFVJzWNw9n2Ilzbxne4GR5Bm5ud48tTlxUstZbupykT_qGAOBKcgCjc-NtNi6gsH_Y3qVAI9Nq-i7AiShzTuIULXk4gtxjiBbIbjGu1wIahsDdUxtXZkPDPzuiWD6XyYKXqxnf9ewGDrz=w1366-h657);
+    background-position: 39% 0;
+    font-family: 'Marcellus', serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+form{
+    font-family: 'Marcellus', serif;
+}
+
+.login-form{
+    width: 400px;
+    height: 490px;
+    min-width: 300px;
+    background-color: rgb(51, 122, 183, 0.83);
+
+}
+
+form .blanco{
+    width: 403px;
+    margin: 0;
+    padding: 0;
+    left: -1px;
+    position: relative;
+}
+
+form .hotel{
+    left: 20px;
+    position: relative;
+    bottom: 125px;
+    width: 175px;
+}
+
+.container form i{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--blanco);
+    background: var(--magenta);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    bottom: 85px;
+    left: 155px;
+    align-items: center;
+    align-self: center;
+}
+
+.login-form label{
+    color: var(--blanco);
+    font-size: 1.1em;
+    left: 41px;
+    position: relative;
+    bottom: 50px;
+    font-family: 'Marcellus', serif;
+}
+
+.login-form input{
+    display: block;
+    margin: auto;
+    height: 35px;
+    width: 80%;
+    padding-left: 40px;
+    border: 3px solid;
+}
+
+.login-form input[type="text"]{
+    margin-top: 5px;
+    border: none;
+    bottom: 52px;
+    position: relative;
+    margin-bottom: 13px;
+    font-family: 'Marcellus', serif;
+    border-radius: 5px;
+    color: var(--negro2);
+    font-size: 1.3em;
+    outline: none;
+}
+
+.login-form input[type="password"]{
+    margin-top: 5px;
+    border: none;
+    position: relative;
+    bottom: 50px;
+    font-family: 'Marcellus', serif;
+    border-radius: 5px;
+    color: var(--negro2);
+    font-size: 1.3em;
+    text-decoration: none;
+    border-style: none;
+    outline: none;
+}
+
+.login-form input[type="submit"]{
+    margin-top: 5px;
+    background-color: var(--negro2);
+    color: var(--blanco);
+    padding: 0.2rem;
+    margin-top: 70px;
+    border: none;
+    position: relative;
+    bottom: 70px;
+    font-family: 'Marcellus', serif;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login-form button{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    height: 40px;
+    width: 78%;
+    background-color: #000;
+}
